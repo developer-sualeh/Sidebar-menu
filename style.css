@@ -215,14 +215,24 @@ a {
     opacity: 1;
     pointer-events: initial;
   }
-  .dropdown__menu {
-    display: block;
-  }
 }
 
 @media (width <= 565px) {
-  html {
-    font-size: 52%;
+  .container {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .menu__close {
+    padding-right: 2.5rem;
+  }
+  .nav__name,
+  .dropdown-nav__name,
+  .right_icon {
+    padding: 0.5rem 2.5rem 0.5rem 4rem;
+  }
+  .back {
+    padding-left: 2.5rem;
   }
   .nav__menu,
   .dropdown__menu {
