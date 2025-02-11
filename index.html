@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sideBar Menu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo"> LOGO</a>
+        <span><i class="bx bxs-bar-chart-alt-2 bar__icon"></i></span>
+
+        <div class="nav__menu" id="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__items">
+              <a href="#" class="nav__link home">
+                <span class="nav__name">home</span>
+              </a>
+            </li>
+            <li class="nav__items">
+              <a href="#" class="nav__link" id="service">
+                <span class="nav__name">service</span>
+                <i class="bx bx-chevron-right right_icon"></i>
+              </a>
+
+              <div class="dropdown__menu hidden__sidebar" id="service__menu">
+                <ul class="dropdown-nav__list">
+                  <li class="dropdown-nav__items">
+                    <a href="#" id="back" class="dropdown-nav__link home back">
+                      <i class="bx bx-left-arrow-alt back"></i>
+                      <span class="dropdown-nav__name"> Back </span>
+                    </a>
+                  </li>
+                  <li class="dropdown-nav__items">
+                    <a href="#" class="dropdown-nav__link">
+                      <span class="dropdown-nav__name"> HTML </span>
+                    </a>
+                  </li>
+                  <li class="dropdown-nav__items">
+                    <a href="#" class="dropdown-nav__link">
+                      <span class="dropdown-nav__name"> React </span>
+                    </a>
+                  </li>
+                  <li class="dropdown-nav__items">
+                    <a href="#" class="dropdown-nav__link">
+                      <span class="dropdown-nav__name"> CSS </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav__items">
+              <a href="#" class="nav__link">
+                <span class="nav__name">skills</span>
+              </a>
+            </li>
+            <li class="nav__items">
+              <a href="#" class="nav__link">
+                <span class="nav__name">about</span>
+              </a>
+            </li>
+          </ul>
+          <span><i class="bx bx-window-close menu__close"></i></span>
+        </div>
+      </nav>
+    </header>
+    <script src="script.js"></script>
+  </body>
+</html>
